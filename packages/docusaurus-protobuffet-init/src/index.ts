@@ -19,10 +19,10 @@ export default async function init(
     throw err;
   }
 
-  console.log(chalk.cyan('Installing docusaurus-protobuffet with recommended plugins.'));
+  console.log(chalk.cyan('Installing docusaurus-protobuffet.'));
 
   try {
-    execSync(`cd ${siteName} && npm install --save docusaurus-protobuffet @easyops-cn/docusaurus-search-local`, { stdio: 'inherit' });
+    execSync(`cd ${siteName} && npm install --save docusaurus-protobuffet`, { stdio: 'inherit' });
   } catch (err) {
     console.log(chalk.red('Installation of Protobuffet preset failed.'));
     throw err;

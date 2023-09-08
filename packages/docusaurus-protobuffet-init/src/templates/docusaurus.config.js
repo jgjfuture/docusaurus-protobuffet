@@ -116,14 +116,5 @@ module.exports = {
     ]
   ],
   plugins: [
-    [
-      '@easyops-cn/docusaurus-search-local',
-      {
-        hashed: true,
-        docsRouteBasePath: 'protodocs',
-        docsDir: 'protodocs',
-        indexBlog: false,
-      },
-    ],
   ]
 };
